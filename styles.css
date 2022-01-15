@@ -208,6 +208,8 @@ header {
 }
 
 .hero__play-icon {
+  height: 48px;
+  width: 48px;
   margin-right: 16px;
 }
 
