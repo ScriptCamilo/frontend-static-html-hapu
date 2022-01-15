@@ -11,11 +11,6 @@
 
   /* Overlay */
   --overlay: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
-
-  /* Error */
-  --error-background: #ffe7e7;
-  --error-required: #ffaeae;
-  --error-message: #ff8f8f;
 }
 
 * {
@@ -41,6 +36,12 @@ main, header, footer {
   justify-content: space-between;
   padding: 0 1rem;
   width: 100%;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
 }
 
 p {
@@ -263,25 +264,22 @@ main {
 .first-section > img {
   height: 392px;
   width: 584px;
-  margin-right: 128px;
+  margin-left: 28px;
 }
 
 .first-section__title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 228px;
-  margin-right: 26px;
+  margin-right: 28px;
   text-align: start;
+  max-width: 444px;
 }
 
 .first-section__title h2, .third-section__title h2 {
   margin: 0 0 2rem 0;
   width: max-content;
   max-width: 60%;
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: normal;
 }
 
 .second-section h3 {
@@ -362,9 +360,6 @@ form > button {
   max-width: 70%;
   margin-bottom: 1rem;
   width: max-content;
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: normal;
 }
 
 .fifth-section > img {
@@ -382,4 +377,75 @@ form > button {
 
 .fifth-section__title h2 {
   margin: 40px 0;
+}
+
+footer {
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.footer__header {
+  margin: 1.5rem 0;
+}
+
+.footer__button {
+  width: 304px;
+  background-color: var(--secondary);
+  justify-content: space-evenly;
+  height: 4rem;
+}
+
+.footer__button > div {
+  text-align: start;
+}
+
+.footer__button:hover {
+  background-color: #411672;
+}
+
+footer a {
+  margin: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.footer__links nav {
+  display: flex;
+  justify-content: space-around;
+  /* width: 35%; */
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  line-height: 0;
+}
+
+.footer__links a img {
+  height: 24px;
+  width: 64px;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+}
+
+.footer__social-media a img {
+  height: 45px;
+  width: 45px;
+}
+
+.footer__copyright {
+  opacity: 0.6;
+  text-align: start;
 }
