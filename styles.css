@@ -6,7 +6,7 @@
   --background: #FAF9F7;
 
   /* Brand Color */
-  --primary: #00A870;
+  --primary: #00C88C;
   --secondary: #5E20A4;
 
   /* Overlay */
@@ -43,6 +43,36 @@ main, header, footer {
   width: 100%;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+button, a {
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #028358;
+}
+
+hr {
+  border: 1px solid var(--gray-88);
+  align-self: stretch;
+}
+
 .custom-link {
   color: var(--secondary);
   width: auto;
@@ -51,6 +81,17 @@ main, header, footer {
 
 .custom-link > span span {
   border-bottom: 1px solid currentColor;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  max-width: 1440px;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem
 }
 
 header {
@@ -96,7 +137,7 @@ header {
   align-items: center;
   justify-content: space-between;
   align-self: center;
-  max-width: 1024px;
+  max-width: 1440px;
 }
 
 .hero > div {
@@ -106,6 +147,7 @@ header {
   text-align: left;
   align-items: flex-start;
   width: 100%;
+  margin-left: 128px;
 }
 
 .hero__title {
@@ -119,13 +161,13 @@ header {
 }
 
 .hero__title h1 {
-  width: 75%;
+  width: 80%;
   font-size: 40px;
   line-height: 48px;
 }
 
 .hero__title p {
-  width: 85%;
+  width: 90%;
   font-size: 18px;
   line-height: 24px;
 }
@@ -146,10 +188,134 @@ header {
 .hero__banner {
   height: 290px;
   width: 316px;
+  margin-right: 228px;
+}
+
+.profile-example {
+  display: flex;
+  align-items: center;
+  height: max-content;
+  background-color: white;
+  padding: 1.5rem;
+  border-bottom: 1px solid #DFDFDF;
+  justify-content: center;
+}
+
+.profile-example > p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-example__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: max-content;
+  max-width: 70%;
+  margin: 0.1rem;
+}
+
+.profile-example__link > img {
+  margin-right: 1.5rem;
+  height: 56px;
+  width: 56px;
+  border: 4px solid white;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+  border-radius: 28px;
 }
 
 main {
   align-items: center;
+}
+
+.first-section, .third-section {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.first-section > img {
+  height: 392px;
+  width: 584px;
+  margin-right: 128px;
+}
+
+.first-section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 228px;
+  margin-right: 26px;
+  text-align: start;
+}
+
+.first-section__title h2, .third-section__title h2 {
+  margin: 0 0 2rem 0;
+  width: max-content;
+  max-width: 60%;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.second-section__title {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+form > label {
+  display: flex;
+  margin: 0;
+  width: 36%;
+  align-items: center;
+  justify-content: flex-start;
+  height: 6rem;
+}
+
+form > label input {
+  font-size: 0.9rem;
+  height: 3rem;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--gray-88);
+  padding: 1rem;
+}
+
+form > label input::placeholder {
+  opacity: 0.6;
+}
+
+form > button {
+  height: 3rem;
+  padding: 1rem;
+  width: 15%;
+}
+
+.third-section > img {
+  height: 336px;
+  width: 456px;
+  margin-left: 228px;
+}
+
+.third-section__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 228px;
+  margin-left: 44px;
+  text-align: start;
+}
+
+.third-section__title h2 {
+  max-width: 100%;
 }
 
 h1 {
@@ -191,36 +357,6 @@ a:hover {
 input {
   border: none;
   outline: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: 'Inter', sans-serif;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary);
-  border-radius: 4px;
-  height: 100%;
-  width: 100%;
-}
-
-button, a {
-  transition: 0.2s;
-}
-
-button:hover {
-  background-color: #028358;
-}
-
-hr {
-  border: 1px solid var(--gray-88);
-  align-self: stretch;
 }
 
 h2 {

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Hapu - The New Way To Share Nanny</title>
 </head>
 <body>
@@ -45,7 +48,7 @@
 
         <a
           href="/"
-          class="hero__player custom-link"
+          class="custom-link hero__player"
         >
           <img src="resources/play_icon.svg" alt="Player" class="hero__play-icon" />
           <span>
@@ -59,5 +62,132 @@
       <img class="hero__banner" src="resources/banner_modal.png" alt="Simulating a connection" />
     </section>
   </header>
+
+  <section class="profile-example">
+    <a href="/" class="custom-link profile-example__link">
+      <img src="resources/sarah_profile.png" alt="Sarah's profile" />
+      <span>
+        <span>
+          Sarah's day care available now in North Sydney
+        </span>
+      </span>
+    </a>
+
+    <p><b>Wednesday, Thursday, Friday - 7:30 - 5:30</b></p>
+  </section>
+
+  <main>
+    <section class="main-section first-section">
+      <div class="first-section__title">
+        <h2>
+          Share your home,
+          nanny and costs
+        </h2>
+
+        <p>
+          You have a fantastic home, a fantastic
+          nanny and wouldn’t cutting your costs in
+          half be, well, fantastic?! If only it was easy
+          to connect with other parents to share
+          your costs? Well now it is, with Hapu.
+          <a href="/" class="custom-link">
+            <span>
+              <span>
+                Hapu means tribe
+              </span>
+            </span>
+          </a>
+          and it’s our foundational 3
+          tribal principles that empowers you to
+          create and manage your own tribe. A tribe
+          that together has the power to create new
+          affordable solutions in childcare that work
+          for you and your community.
+        </p> <br />
+
+        <a href="/" class="custom-link">
+          <span>
+            <span>
+              Ready to get started?
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <img src="resources/nanny_share_macbook.png" alt="Nanny Share Macbook" />
+    </section>
+
+    <hr />
+
+    <section class="main-section second-section">
+      <h3 class="second-section__title">
+        Are you a parent without a
+        nanny and looking to share?
+      </h3>
+
+      <p>
+        Leave us your name and email and we’ll
+        update you as soon as a share becomes
+        available in your area!
+      </p>
+
+      <form>
+        <label for="name">
+          <input
+            type="text"
+            id="name"
+            value=""
+            name="name"
+            placeholder="Your name *"
+          />
+        </label>
+
+        <label>
+          <input
+            type="text"
+            id="email"
+            value=""
+            name="email"
+            placeholder="Your email *"
+          />
+        </label>
+
+        <button type="submit">
+          Send
+        </button>
+      </form>
+    </section>
+
+    <hr />
+
+    <section class="main-section third-section">
+      <img src="resources/shared_payments.png" alt="Shared payments" />
+
+      <div class="third-section__title">
+        <h2>
+          Shared payments
+          made simple
+        </h2>
+
+        <p>
+          Sometimes it’s hard enough just sharing a
+          restaurant bill. Try sharing that bill week in,
+          week out and you might encounter more
+          than a few snares. But not with Hapu.
+          Simply set your rates and our automated
+          payment system takes care of the rest. You
+          need never talk money or who owes what.
+        </p> <br />
+
+        <a href="/" class="custom-link">
+          <span>
+            <span>
+              Read how Bridget's share (without Hapu) ended over $15
+            </span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
