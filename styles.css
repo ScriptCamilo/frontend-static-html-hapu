@@ -423,8 +423,12 @@ footer a {
 .footer__links nav {
   display: flex;
   justify-content: space-around;
-  /* width: 35%; */
+  align-self: center;
   flex-wrap: wrap;
+}
+
+.footer__links nav a {
+  font-size: 14px;
 }
 
 .footer__links a {
@@ -436,10 +440,12 @@ footer a {
   width: 64px;
 }
 
+.footer__links > a, .footer__social-media {
+  width: 167px;
+}
 .footer__social-media {
   display: flex;
   justify-content: space-between;
-  width: 167px;
 }
 
 .footer__social-media a img {
